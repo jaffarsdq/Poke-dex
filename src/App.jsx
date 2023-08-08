@@ -1,11 +1,19 @@
 import './App.css'
 
+// components import
+import Navbar from './components/Navbar/Navbar'
+
+//router import
+import MainRoutes from './routes/MainRoutes'
+
+
 function App() {
 
 
   return (
     <>
-      <h1>hii</h1>
+      <Navbar/>
+      <MainRoutes/>
     </>
   )
 }

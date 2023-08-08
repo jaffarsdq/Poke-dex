@@ -1,0 +1,36 @@
+.nav-wrapper {
+    color: black;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-link {
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    flex-basis: 15%;
+    font-weight: 400;
+}
+
+.nav-input-wrapper {
+    flex-basis: 72%;
+}
+
+.nav-input {
+    font-size: 1rem;
+    margin:0 auto;
+    padding: 0.2rem;
+    margin: 13px;
+    width: 700px;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.nav-input:focus {
+    outline-color: rgb(95, 143, 233);
+}
+
