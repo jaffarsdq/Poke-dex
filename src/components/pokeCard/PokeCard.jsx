@@ -1,35 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'; 
+
 
 //css import
 import './pokeCard.css'
-import axios from 'axios'
-
+//custom hook
+import usePokemonsDetails from '../../hooks/usePokemonsDetails'
 
 function PokeCard({name}) {
-
-    const [pokemon, setPokemon] = useState('');
-    async function downloadImage(name) {
-        const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
-        const pokemonOfSameTypes = await axios.get(`https://pokeapi.co/api/v2/type/${response.data.types ? response.data.types[0].type.name : ''}`);
-        setPokemon({
-            name: response.data.name,
-            image: response.data.sprites.other.dream_world.front_default,
-            weight: response.data.weight,
-            height: response.data.height,
-            types: response.data.types.map((t) => t.type.name),
-            similarPokemons: pokemonOfSameTypes.data.pokemon
-        });
+    const [pokemon] = usePokemonsDetails(name);
+    const navigator = useNavigate();
+    function handleClick() {
+        navigator(`/details/${name}`)
     }
 
-    useEffect(() => {
-        downloadImage(name);
-    })
-
-
   return (
-    <div onClick={() => handleClick} className='pokeCard-wrapper'>
+    <div onClick={() => handleClick()} className='pokeCard-wrapper'>
         <img className='pokeCard-img' src={pokemon.image} alt="Pokemon"/>
-        <a className='pokeCard-link' href="#">{name}</a>
+        <div className='pokeCard-link'>{name}</div>
     </div>
   )
 }

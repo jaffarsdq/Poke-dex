@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 //css import
 
 import './navbar.css'
@@ -7,9 +7,9 @@ import './navbar.css'
 function Navbar() {
   return (
     <nav className='nav-wrapper'>
-        <div className="nav-link">
+        <Link to={'/'} className="nav-link">
             Poke Dex
-        </div>
+        </Link>
         <div className="nav-input-wrapper">
             <input 
                 className='nav-input'

@@ -8,11 +8,14 @@
     padding: 20px;
     margin:20px;
     border-radius: 8px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .pokeCard-wrapper:hover {
     cursor: pointer;
-    background-color: rgba(184, 195, 201, 0.75);
+    background-color: aliceblue;
+    font-style: oblique;
 }
 
 .pokeCard-img {
@@ -23,8 +26,4 @@
 .pokeCard-link {
     color: black;
     text-decoration: none;
-}
-
-.pokeCard-link:hover {
-    font-weight: 500;
 }

@@ -7,7 +7,7 @@ function MainRoutes() {
     return (
         <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/details' element={<PokeDetails/>}/>
+            <Route path='/details/:name' element={<PokeDetails/>}/>
             <Route path='*' element={<Error/>}/>
         </Routes>
     )

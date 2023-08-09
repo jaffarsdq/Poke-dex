@@ -1,0 +1,39 @@
+.detail-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.detail-img {
+    width: 240px;
+    height: 240px;
+}
+.detail-name {
+    letter-spacing: 3px;
+    font-variant-caps: all-petite-caps;
+    font-size: 2rem;
+}
+.detail-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.detail-type {
+    background-color: rgb(56, 150, 232);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+}
+
+
+.detail-type-wrapper {
+    display: flex;
+    gap: 1rem;
+}
