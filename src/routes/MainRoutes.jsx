@@ -1,6 +1,6 @@
 import {Routes, Route} from 'react-router-dom';
 import Home from '../Pages/home/Home';
-import Error from '../Pages/error/error';
+import Error from '../Pages/error/Error'
 import PokeDetails from '../Pages/pokeDetails/PokeDetails';
 
 function MainRoutes() {
