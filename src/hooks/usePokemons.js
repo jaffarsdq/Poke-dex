@@ -7,11 +7,11 @@ function usePokemons(val) {
             axios.get(morePokemons(val))
             .then(response => {
                 const responseObject = response.data;
-                setPokemons([...responseObject.results]);
+                setPokemons([...pokemons,...responseObject.results]);
             })
         }, [val]);
 
-        return [pokemons,setPokemons];
+        return [pokemons];
 }
 
 export default usePokemons;

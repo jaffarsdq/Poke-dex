@@ -9,7 +9,7 @@ import pokemonLogo from '../../assets/pokemonLogo.png'
 function Navbar() {
   return (
     <nav className='nav-wrapper'>
-        <Link to={'/'} className="nav-link">
+        <Link to={'./'} className="nav-link">
             <img src={pokemonLogo} alt="pokemon logo" className='nav-logo'/>
         </Link>
         <div className="nav-input-wrapper">
@@ -25,4 +25,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;
