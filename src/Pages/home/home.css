@@ -23,3 +23,7 @@
     background-color:rgb(203, 233, 249);
     border: 3px solid transparent;
 }
+
+.not-allowed {
+    cursor: not-allowed;
+}

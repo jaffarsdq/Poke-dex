@@ -43,7 +43,11 @@ function Home() {
           )}
       </div>
       <div className="home-btn-wrapper">
-        <button onClick={handleClickPrev} className='home-btn'>
+        <button 
+          onClick={handleClickPrev} 
+          className={`home-btn ${apiVal < 20 ? 'not-allowed' : ''}`}
+          disabled={apiVal < 20}
+        >
           Prev 
         </button> 
         <button onClick={handleClickNext} className='home-btn'>
