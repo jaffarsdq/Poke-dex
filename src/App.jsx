@@ -1,7 +1,7 @@
 import './App.css'
 
 // components import
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/navbar/Navbar'
 
 //router import
 import MainRoutes from './routes/MainRoutes'
