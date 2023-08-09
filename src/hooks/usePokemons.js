@@ -7,7 +7,7 @@ function usePokemons(val) {
             axios.get(morePokemons(val))
             .then(response => {
                 const responseObject = response.data;
-                setPokemons([...pokemons,...responseObject.results]);
+                setPokemons([...responseObject.results]);
             })
         }, [val]);
 
