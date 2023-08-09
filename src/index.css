@@ -1,5 +1,11 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --poke-yellow: #ffcc02;
+  --poke-blue: #3066B0;
+  --poke-light-yellow: #fff0b3;
+  --poke-light-blue: #70a3eb;
+  --poke-lighter-blue: #d9e6fb;
+  background-color: aliceblue;
 }
 
 body {

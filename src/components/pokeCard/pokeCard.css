@@ -10,11 +10,12 @@
     border-radius: 8px;
     letter-spacing: 2px;
     font-weight: 500;
+    transition: all 400ms;
 }
 
 .pokeCard-wrapper:hover {
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: var(--poke-lighter-blue);
     font-style: oblique;
 }
 

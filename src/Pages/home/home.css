@@ -8,20 +8,23 @@
     display: flex;
     justify-content: center;
     gap: 5rem;
-    margin: 2rem;
+    margin-bottom: 5rem;
 }
 
 .home-btn {
     padding: 0.5rem 1rem;
-    border: 3px solid rgb(27, 136, 232);
     background-color: inherit;
     border-radius: 4px;
     font-size: larger;
+    border: none;
+    color: var(--poke-yellow);
+    background-color: var(--poke-blue);
+    cursor: pointer;
 }
 
 .home-btn:hover {
-    background-color:rgb(203, 233, 249);
-    border: 3px solid transparent;
+    color: var(--poke-yellow);
+    background-color: var(--poke-light-blue);
 }
 
 .not-allowed {

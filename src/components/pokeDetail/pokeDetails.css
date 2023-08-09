@@ -2,7 +2,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin-top: 5rem;
 }
 
 .detail-img {
@@ -13,23 +13,42 @@
     letter-spacing: 3px;
     font-variant-caps: all-petite-caps;
     font-size: 2rem;
+    font-style: oblique;
 }
+
+.detail-height {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.detail-weight {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
 .detail-main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-.detail-type {
-    background-color: rgb(56, 150, 232);
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    color: white;
-    font-size: larger;
+.detail-type-heading {
+    padding: 0.5rem 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-family:cursive;
     font-weight: 500;
     letter-spacing: 2px;
-    font-variant: small-caps;
+}
+
+.detail-type {
+    background-color: var(--poke-blue);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family:cursive;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 
