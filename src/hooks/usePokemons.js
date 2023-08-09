@@ -1,17 +1,17 @@
-import { pokemonsUrl } from "../apis/pokeApis";
+import { morePokemons } from "../apis/pokeApis";
 import { useState, useEffect } from "react";
 import axios from "axios";
-function usePokemons() {
+function usePokemons(val) {
     const [pokemons, setPokemons] = useState([])
-        useEffect(() => {        
-            axios.get(pokemonsUrl())
+        useEffect(() => {      
+            axios.get(morePokemons(val))
             .then(response => {
                 const responseObject = response.data;
                 setPokemons([...responseObject.results]);
             })
-        }, []);
+        }, [val]);
 
-        return [pokemons];
+        return [pokemons,setPokemons];
 }
 
 export default usePokemons;

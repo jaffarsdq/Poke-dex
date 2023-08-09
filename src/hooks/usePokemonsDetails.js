@@ -19,7 +19,7 @@ function usePokemonsDetails(name) {
 
     useEffect(() => {
         downloadPokemon(name);
-    },[])
+    },[name])
 
     return [pokemon];
 }

@@ -3,3 +3,23 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.home-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem;
+}
+
+.home-btn {
+    padding: 0.5rem 1rem;
+    border: 3px solid rgb(27, 136, 232);
+    background-color: inherit;
+    border-radius: 4px;
+    font-size: larger;
+}
+
+.home-btn:hover {
+    background-color:rgb(203, 233, 249);
+    border: 3px solid transparent;
+}
