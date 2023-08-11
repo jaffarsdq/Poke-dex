@@ -60,8 +60,16 @@
     color: white;
     font-weight: 500;
     font-size: large;
+    cursor: pointer;
 }
 
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.nav-input-btn:hover {
+    background-color: var(--poke-light-blue);
+}
 
 @media (max-width: 428px) {
     .nav-wrapper {

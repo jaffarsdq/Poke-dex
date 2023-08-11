@@ -1,6 +1,6 @@
-import { morePokemons } from "../apis/pokeApis";
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { morePokemons } from '../apis/pokeApis';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 function usePokemons(val) {
     const [pokemons, setPokemons] = useState([])
         useEffect(() => {      

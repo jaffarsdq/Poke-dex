@@ -10,7 +10,7 @@ function PokeDetails() {
   const [pokemon] = usePokemonsDetails(name);
 
   return (
-    <div className="pokeDetails-wrapper">
+    <div className='pokeDetails-wrapper'>
         <PokeDetail {...pokemon}/>
     </div>
   )

@@ -10,32 +10,35 @@ function Navbar() {
 
   const [namePoke, setNamePoke] = useState('');
   const navigator = useNavigate();
-    function handleClick() {
-        navigator(`/details/${namePoke}`)
+    function handleClick(e) {
+      if(e.target.value.length != 0) navigator(`/details/${namePoke}`)
     }
 
     function handleClickOnEnter(e) {
-      if(e.key === 'Enter') navigator(`/details/${namePoke}`)
+      if(e.target.value.length != 0){
+        if(e.key === 'Enter') navigator(`/details/${namePoke}`)
+      }
     }
   
   return (
     <nav className='nav-wrapper'>
-        <Link to={'./'} className="nav-link">
-            <img src={pokemonLogo} alt="pokemon logo" className='nav-logo'/>
+        <Link to={'./'} className='nav-link'>
+            <img src={pokemonLogo} alt='pokemon logo' className='nav-logo'/>
         </Link>
-        <div className="nav-input-wrapper">
+        <div className='nav-input-wrapper'>
             <input 
                 className='nav-input'
-                type="search" 
-                name="search" 
-                id="search" 
+                type='search' 
+                name='search' 
+                id='search' 
                 placeholder='search your poke...'
                 onChange={(e) => setNamePoke(e.target.value)}
                 onKeyDown={(handleClickOnEnter)}
             />
             <button 
               onClick={handleClick}
-              className="nav-input-btn">
+              className={`nav-input-btn ${namePoke.length < 1 ? 'not-allowed' : ''}`}
+            >
               Search
             </button>
         </div>

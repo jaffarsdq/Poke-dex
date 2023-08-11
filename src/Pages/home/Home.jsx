@@ -35,14 +35,14 @@ function Home() {
 
   return (
     <>
-      <div className="home-wrapper">
+      <div className='home-wrapper'>
           {pokemons.length > 0 && pokemons.map((pokemon, idx) => <PokeCard
                                           key={idx}
                                           {...pokemon}
                                       />
           )}
       </div>
-      <div className="home-btn-wrapper">
+      <div className='home-btn-wrapper'>
         <button 
           onClick={handleClickPrev} 
           className={`home-btn ${apiVal < 20 ? 'not-allowed' : ''}`}

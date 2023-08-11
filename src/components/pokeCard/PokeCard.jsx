@@ -16,7 +16,7 @@ function PokeCard({name}) {
 
   return (
     <div onClick={() => handleClick()} className='pokeCard-wrapper'>
-        <img className='pokeCard-img' src={pokemon.image} alt="Pokemon"/>
+        <img className='pokeCard-img' src={pokemon.image} alt='Pokemon'/>
         <div className='pokeCard-link'>{name}</div>
     </div>
   )
