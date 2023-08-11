@@ -13,6 +13,11 @@ function Navbar() {
     function handleClick() {
         navigator(`/details/${namePoke}`)
     }
+
+    function handleClickOnEnter(e) {
+      if(e.key === 'Enter') navigator(`/details/${namePoke}`)
+    }
+  
   return (
     <nav className='nav-wrapper'>
         <Link to={'./'} className="nav-link">
@@ -26,6 +31,7 @@ function Navbar() {
                 id="search" 
                 placeholder='search your poke...'
                 onChange={(e) => setNamePoke(e.target.value)}
+                onKeyDown={(handleClickOnEnter)}
             />
             <button 
               onClick={handleClick}
