@@ -20,6 +20,9 @@ function Navbar() {
                 id="search" 
                 placeholder='search your poke...'
             />
+            <btn className="nav-input-btn">
+              Search
+            </btn>
         </div>
     </nav>
   )
