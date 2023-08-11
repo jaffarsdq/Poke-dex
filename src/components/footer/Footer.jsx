@@ -3,14 +3,21 @@ import './footer.css'
 
 function Footer() {
   return (
-    <div class="footer-section">
-        <div class="copyrights">
+    <div className="footer-section">
+        <div className="copyrights">
           &#169; Jaffar Sadhiq
         </div>
-        <div class="social">
-          <a class="linkedIn link" href="https://www.linkedin.com/in/jaffar-sadhiq/">LinkedIn</a>
-          <a class="github link" href="https://github.com/jaffarsdq">Github</a>
+        <div className="social">
+          <a className="github link" href="https://github.com/jaffarsdq">
+            <i className="bi bi-github"></i>
+          </a>
+          <a className="linkedIn link" href="https://www.linkedin.com/in/jaffar-sadhiq/">
+            <i className="bi bi-linkedin"></i>
+          </a>
         </div>
+          <a className='mail link' href="mailto:er.jaffarsdq@gmail.com">
+            <i className="bi bi-envelope-at"></i> er.jaffarsdq@gmail.com
+          </a>
     </div>
   )
 }

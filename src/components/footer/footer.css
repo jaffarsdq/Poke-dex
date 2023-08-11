@@ -5,20 +5,22 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    height: 4rem;
+    min-height: 4rem;
 
 }
 
 .social {
     display: flex;
     justify-content: space-between;
-    margin-right: 3rem;
+    gap: 10px;
+    margin-left: 3rem;
 }
 
 .link{
     color: white;
     text-decoration: none;
     margin: 10px 5px;
+    font-size: large;
 }
 
 .copyrights {
@@ -26,8 +28,39 @@
     margin-left: 3rem;
 }
 
+.mail {
+    margin-right: 3rem;
+}
 
 .link:hover {
     color: var(--poke-blue);
     font-weight: 400;
+}
+
+@media (max-width: 426px) {
+    .footer-section {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        min-height: 4rem;
+    }
+    .copyrights {
+        margin: 10px 5px;
+        margin-left: 0rem;
+    }
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 0rem;
+        align-items: center;
+        margin: 0;
+    }
+    .mail {
+        margin-right: 0rem;
+    }
 }
