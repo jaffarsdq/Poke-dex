@@ -32,7 +32,7 @@ function Navbar() {
                 name='search' 
                 id='search' 
                 placeholder='search your poke...'
-                onChange={(e) => setNamePoke(e.target.value)}
+                onChange={(e) => setNamePoke(e.target.value.toLowerCase())}
                 onKeyDown={(handleClickOnEnter)}
             />
             <button 
