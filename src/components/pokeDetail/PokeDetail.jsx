@@ -14,7 +14,7 @@ function PokeDetail({name, height, weight, image, types}) {
         <div className='detail-weight'>Weight : {weight}</div>
       </div>
       <div className="detail-type-wrapper">
-        <h6 className='detail-type-heading'>Type of poke :</h6>
+        <h6 className='detail-type-heading'>Type of poke</h6>
         {types && types.map((t, i) => <h6 key={i} className='detail-type'>{t}</h6>)}
       </div>
     </div>

@@ -57,7 +57,7 @@
     gap: 1rem;
 }
 
-@media (max-width: 322px) {
+@media (max-width: 426px) {
     .detail-wrapper {
         display:flex;
         flex-direction: column;
@@ -66,15 +66,26 @@
     }
     .detail-type-wrapper {
         display: flex;
-        gap: 0rem;
+        gap: 4px;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
 
     .detail-type-heading {
-        padding: 0.5rem 1rem;
+        margin: 5px;
+        margin-top: 4rem;
+        padding: 0rem;
         color: rgb(0, 0, 0);
         font-size: 1.5rem;
-        font-family:cursive;
-        font-weight: 500;
-        letter-spacing: 0px;
+        font-family: cursive;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .detail-type {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        align-self: center;
     }
 }
