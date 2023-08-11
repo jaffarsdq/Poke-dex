@@ -1,0 +1,33 @@
+.footer-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 4rem;
+
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+
+.copyrights {
+    margin: 10px 5px;
+    margin-left: 3rem;
+}
+
+
+.link:hover {
+    color: var(--poke-blue);
+    font-weight: 400;
+}
